@@ -10,7 +10,7 @@ A PocketMine-MP Plugin for https://github.com/pmmp/PocketMine-MP
 
 You need 339:1 x20 to create a Guild
 
-## API to Develop
+## API for Developers
 **use**
 
 use securti\guild\Guild;

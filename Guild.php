@@ -32,6 +32,7 @@ use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
 
 use pocketmine\utils\Config;
+use pocketmine\utils\TextFormat;
 
 class Guild extends PluginBase implements Listener {
 
@@ -288,9 +289,9 @@ class Guild extends PluginBase implements Listener {
         $player->sendMessage($prefix."모든 정보를 정확히 입력해주세요");
       }
       else{
-      
-        $text = $button[0];
-        $text = str_replace("§0", "", $text);
+        
+        $text = TextFormat::clean($button[0]);
+        /*$text = str_replace("§0", "", $text);
         $text = str_replace("§1", "", $text);
         $text = str_replace("§2", "", $text);
         $text = str_replace("§3", "", $text);
@@ -311,7 +312,7 @@ class Guild extends PluginBase implements Listener {
         $text = str_replace("§c", "", $text);
         $text = str_replace("§b", "", $text);
         $text = str_replace("§n", "", $text);
-        $text = str_replace("§m", "", $text);
+        $text = str_replace("§m", "", $text);*/
         
         if(mb_strlen($text, "utf-8") > 10 or mb_strlen($text, "utf-8") < 1){
         

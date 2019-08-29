@@ -2,20 +2,26 @@
 A PocketMine-MP Plugin for https://github.com/pmmp/PocketMine-MP
 
 ## How to use
-**command**
+**Command**
 
 /길드 - Open Main UI
 
 /초대 - Manage Invitation
 
+**Description**
+
 You need 339:1 x20 to create a Guild
 
+**Needs**
+
+None
+
 ## API for Developers
-**use**
+**Use**
 
 use securti\guild\Guild;
 
-**example**
+**Example**
 
 $api = Guild::getInstance();
 
